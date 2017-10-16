@@ -1,0 +1,13 @@
+{
+  "id": "rocketchat",
+  "name": "Rocket.Chat",
+  "version": "1.0.3",
+  "description": "Rocket.Chat",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "hasNotificationSound": true,
+    "hasCustomUrl": true
+  }
+}

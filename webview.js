@@ -1,4 +1,4 @@
-import { ipcRenderer } from 'electron';
+const { ipcRenderer } = require('electron');
 
 const getTeamIcon = function getTeamIcon() {
   console.log('getTeamIcon');

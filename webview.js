@@ -10,6 +10,7 @@ const getTeamIcon = function getTeamIcon() {
   }
 
   const manifestUrl = manifestElement.getAttribute('href');
+  console.log(manifestUrl);
 
   if (manifestUrl == null) {
     return;
@@ -24,7 +25,7 @@ const getTeamIcon = function getTeamIcon() {
     const response = JSON.parse(this.responseText);
 
     if (response.icons.length >= 1) {
-      ipcRenderer.sendToHost('avatar', `${window.location.protocol}//${window.location.host}/${response.icons[0].src}`);
+      ipcRenderer.sendToHost('avatar', `${window.location.protocol}//${window.location.host}${response.icons[0].src}`);
     }
   };
   xmlhttp.open('GET', manifestUrl, true);
